@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    >
+
+    <TextView
+        android:id="@+id/HomePageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Home Page"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+<!--Blance View RLayOut-->
+    <RelativeLayout
+        android:id="@+id/balaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/HomePageTitle"
+        android:background="#3498db"> <!-- Blue background color -->
+
+        <TextView
+            android:id="@+id/BalanceTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Balance: $200"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" /> <!-- White text color -->
+
+    </RelativeLayout>
+
+
+
+    <!--    List expenc and incon-->
+
+    <ListView
+        android:id="@+id/getDatalistView"
+        android:layout_below="@+id/balaceView"
+        android:layout_width="match_parent"
+        android:layout_height="445dp" />
+    <!-- Expense & Income Button  Layout  -->
+    <LinearLayout
+        android:id="@+id/LinearLayoutExpenceIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/getDatalistView"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp">
+
+        <!-- Expense Button -->
+        <Button
+            android:id="@+id/expenseButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:textSize="24sp"
+            android:background="?attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+
+        <!-- Income Button -->
+        <Button
+            android:id="@+id/incomeButton"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:textSize="24sp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/Testing"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Testing"-->
+<!--        android:textSize="24sp"-->
+<!--        android:background="?android:attr/colorAccent"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_below="@+id/LinearLayoutExpenceIncome"-->
+<!--        />-->
+
+
+</RelativeLayout>

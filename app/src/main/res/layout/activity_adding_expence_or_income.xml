@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddingExpenceOrIncomeActivity">
+<!--    -->
+    <TextView
+        android:id="@+id/AddingExpenceOrIncomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="INCOME"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <!--Blance View RLayOut-->
+    <RelativeLayout
+        android:id="@+id/balaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddingExpenceOrIncomeTitle"
+        android:layout_marginTop="20dp"
+        android:background="#C2F1A1"> <!-- Blue background color -->
+
+        <EditText
+            android:id="@+id/BalanceTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter Amount."
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/teal"
+            android:textSize="24sp"
+            android:textStyle="bold" /> <!-- White text color -->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/balaceView"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp">
+
+        <!-- Deposit Button -->
+        <Button
+            android:id="@+id/depostiButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/teal"
+            android:padding="10dp"
+            android:text="Deposits"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <!-- Salary Button -->
+        <Button
+            android:id="@+id/salaryButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Salary"
+            android:textSize="16dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+<!--       Savings-->
+        <Button
+            android:id="@+id/savingButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Saving"
+            android:textSize="16dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+<!--Other-->
+    <EditText
+        android:id="@+id/OtherEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearEnd"
+        android:padding="10dp"
+        android:text=""
+        android:hint="Please enter the source of income."
+        android:textAlignment="center"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/OtherSourceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="24sp"
+        android:background="?android:attr/colorAccent"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/OtherEdit"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

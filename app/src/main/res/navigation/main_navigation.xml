@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.moneystatic.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/homePageActivity"
+        android:name="com.example.moneystatic.HomePageActivity"
+        android:label="activity_home_page"
+        tools:layout="@layout/activity_home_page" />
+    <activity
+        android:id="@+id/signInActivity"
+        android:name="com.example.moneystatic.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+</navigation>

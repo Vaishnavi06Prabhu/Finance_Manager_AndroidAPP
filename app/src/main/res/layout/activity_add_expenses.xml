@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpensesActivity">
+
+    <TextView
+        android:id="@+id/AddingExpenceOrIncomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Expenses"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <!--Blance View RLayOut-->
+    <RelativeLayout
+        android:id="@+id/balaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddingExpenceOrIncomeTitle"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/light_red"> <!-- Blue background color -->
+
+        <EditText
+            android:id="@+id/BalanceTextview_Expn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter Amount."
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#C50F01"
+            android:textSize="24sp"
+            android:textStyle="bold" /> <!-- White text color -->
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearfirstrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/balaceView"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp">
+
+        <!-- Bills Button -->
+        <Button
+            android:id="@+id/BillBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Bills"
+            android:textSize="18dp"
+            android:background="?attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+
+        <!-- Clothes Button -->
+        <Button
+            android:id="@+id/clothesBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Clothes"
+            android:textSize="18dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+        <!--       House-->
+        <Button
+            android:id="@+id/houseBtin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="House"
+            android:textSize="18dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearSecondRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearfirstrow"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp">
+
+        <!-- health Button -->
+        <Button
+            android:id="@+id/healthBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:textSize="18dp"
+            android:background="?attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+
+        <!-- Food Button -->
+        <Button
+            android:id="@+id/foodBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textSize="18dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+        <!--       Gift out-->
+        <Button
+            android:id="@+id/giftBtin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Gift"
+            android:textSize="18dp"
+            android:background="?android:attr/colorAccent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    <!--Other-->
+    <EditText
+        android:id="@+id/OtherExpensEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearSecondRow"
+        android:padding="10dp"
+        android:text=""
+        android:hint="Please enter the expense category."
+        android:textAlignment="center"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/OtherExpensBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="24sp"
+        android:background="?android:attr/colorAccent"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/OtherExpensEdit"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

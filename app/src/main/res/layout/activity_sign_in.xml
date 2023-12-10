@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+    <TextView
+        android:id="@+id/signinPageTexttittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:padding="10dp"
+        android:text="Create Account"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/signinPageTexttittle"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/emailEditT_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="24dp"
+        android:layout_below="@+id/fullName"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/passwordlEditT_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="24dp"
+        android:layout_below="@+id/emailEditT_signin"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/confirmPasswordlEditT_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textSize="24dp"
+        android:layout_below="@+id/passwordlEditT_signin"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        />
+<!--Captch-->
+<!--    <EditText-->
+<!--        android:id="@+id/CaptchEdit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter Captch"-->
+<!--        android:textSize="24dp"-->
+<!--        android:layout_below="@+id/confirmPasswordlEditT_signin"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:padding="10dp" />-->
+
+<!---->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPasswordlEditT_signin"
+        android:layout_marginTop="30dp"
+        android:hint="Create Account"
+        android:padding="10dp"
+        android:textColorLink="#009688"
+        android:textSize="24dp" />
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreateAccount"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/dont_have_an_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:text="Already have an Account\t? "
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Log_in_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onSecondButtonClick"
+            android:text="Log in"
+            android:textColor="#090707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/CaptchDisplay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@+id/linear_layout2"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="125"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="24dp"-->
+<!--        android:textStyle="bold" />-->
+<!--    <Button-->
+<!--        android:id="@+id/refreshBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Refresh"-->
+<!--        android:textSize="24dp"-->
+<!--        android:layout_below="@+id/CaptchDisplay"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
+</RelativeLayout>
